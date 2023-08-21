@@ -1,0 +1,140 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 30px 20px;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: flex-start;
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+}
+
+.category {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 0.5em;
+}
+
+.name {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  line-height: 0.95em;
+  font-size: 2em;
+  color: hsl(212, 21%, 14%);
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.7em;
+}
+
+.sale-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2em;
+}
+
+.original-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 1em;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5em;
+  width: 100%;
+  padding: 20px;
+  font-family: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+button:hover{
+  background-color: hsl(158, 36%, 20%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    max-width: 1200px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .product-image {
+    content: url("./images/image-product-desktop.jpg");
+    /* impostando width al 50% l'immagine si deforma restringendosi sempre del 50% rispetto al container */
+    width: 50%; 
+    max-width: 600px;
+    height: 100%;
+    /* impostando flex-shrink a 0 nel container l'immagine rimane sempre la meta' del div .content */
+    flex-shrink: 0; 
+  }
+
+  body {
+    font-size: 1.5em;
+    height: 100vh;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+}
+
+
+
+
+/* modificaare i margin di content??? */
