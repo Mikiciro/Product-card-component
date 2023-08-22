@@ -57,7 +57,6 @@ body {
 
 .description {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1em;
   color: hsl(228, 12%, 48%);
   line-height: 1.7em;
 }
@@ -107,6 +106,7 @@ button:hover{
   .container {
     flex-direction: row;
     max-width: 1200px;
+    width: 729px;
     height: 100%;
     overflow: hidden;
   }
@@ -130,11 +130,9 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
   }
 }
 
 
 
 
-/* modificaare i margin di content??? */
